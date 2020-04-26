@@ -2,4 +2,4 @@
 
 To run the scripts, enter:
 
-Node <question number>.js
+Node q{question number}.js
