@@ -13,11 +13,12 @@
             resolve();
         })
     })
-    List = JSON.parse(List);
 
-    index = (List.length + 1) % 2 == 0 ? (List.length + 1) / 2 - 1 : List.length / 2;
+    List = JSON.parse(List); //parsing the input
 
-    output = `Node ${List[index]} from this list (Serialization: [${List.slice(index).join()}])`;
+    index = (List.length + 1) % 2 == 0 ? (List.length + 1) / 2 - 1 : List.length / 2; //getting index of the middle element
+
+    output = `Node ${List[index]} from this list (Serialization: [${List.slice(index).join()}])`; // generating the output
 
     console.log(output);
 

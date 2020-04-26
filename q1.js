@@ -16,8 +16,8 @@
 
     for (let i = N; i > 0; i--) {
         char = "#";
-        output = char.padStart(i);
-        output += N - i > 0 ? char.padEnd(N - i, '#') : '';
+        output = char.padStart(i); //prepending spaces
+        output += N - i > 0 ? char.padEnd(N - i, '#') : ''; //appending '#'
         console.log(output);
     }
     rl.close(); //closing the console input stream

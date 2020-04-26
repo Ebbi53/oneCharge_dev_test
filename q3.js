@@ -21,10 +21,10 @@
         })
     });
 
-    nums1 = JSON.parse(nums1);
-    nums2 = JSON.parse(nums2);
+    nums1 = JSON.parse(nums1); //parsing the input
+    nums2 = JSON.parse(nums2); //parsing the input
 
-    let merge = function (arr1, arr2) {
+    let merge = function (arr1, arr2) { //merging two sorted arrays with time complexity of O(log(arr1.length + arr2.length))
         let arr3 = [],
             i = 0, j = 0;
 
@@ -53,7 +53,7 @@
     mergedArray = merge(nums1, nums2);
     var median;
 
-    if ((mergedArray.length + 1) % 2 == 0) {
+    if ((mergedArray.length + 1) % 2 == 0) { // generating the output
         median = mergedArray[(mergedArray.length + 1) / 2 - 1].toFixed(1);
     } else {
         let a = mergedArray[mergedArray.length / 2 - 1],
